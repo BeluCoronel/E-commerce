@@ -1,0 +1,298 @@
+// Body modo oscuro
+body.oscuro {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    & .modal-content{
+        background-color: rgb(23, 23, 23);
+        color: white;
+    }
+}
+
+
+// Nav
+.container-fluid {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.ul {
+    justify-content: space-evenly;
+}
+
+
+.nav-link {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+
+    &-icon {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+    }
+}
+
+.nav-item a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.header,
+.row {
+    padding: 0;
+}
+
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.font-navbar {
+    font-size: 30px;
+    font-family: open sans, sans-serif;
+}
+
+.navbar-brand {
+    padding: 10px;
+}
+
+
+
+
+// Boton modo oscuro
+
+.switch {
+    background-color: darkblue;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #F1F1F1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+    }
+
+    &.active {
+        background: orangered;
+        color: black;
+
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+
+// Titulo juegos
+.title {
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+
+// Contenedos cards
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container__card {
+    padding: 10px;
+    border: 5px solid orange;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    body.oscuro & {
+        border: 3px solid white;
+    }
+
+}
+
+.container__card__imagen__carrito{
+    width: 100px;
+    height: 30px;
+}
+
+.imagen__carrito{
+    width: 100%;
+    height: auto;
+}
+
+.total{
+    font-size:30px;
+}
+
+// Contacto
+
+form {
+    margin-left: 40px;
+}
+
+input {
+    width: 50%;
+    padding: 12px;
+    border: 3px solid orange;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+
+}
+
+form {
+    width: 700px;
+    display: inline-block;
+
+}
+
+.formcontainer {
+    clear: both;
+    margin: 0 auto;
+    padding: 15px;
+
+
+}
+
+.formcontainer input {
+    width: 100%;
+    clear: both;
+    border-radius: 15px;
+}
+
+.formcontainer textarea {
+    width: -webkit-fill-available;
+    border-radius: 15px;
+}
+
+input[type=submit] {
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+#gmap {
+    width: 800px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+}
+
+iframe {
+    border: 10px solid;
+    border-color: lightblue;
+    float: right;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+// Footer
+
+footer {
+    background-color: orange;
+    padding: 10px;
+    width: 100vw;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.footer-element {
+    width: 0%;
+}
+
+.footer-down {
+    position: absolute;
+}
+
+
+.iconos_footer {
+    color: white;
+    font-size: 30px;
+    font-family: open sans, sans-serif;
+
+    & i {
+        margin: 20px;
+    }
+
+    & a {
+        color: white;
+    }
+
+    & a:hover {
+
+        text-decoration: underline;
+    }
+}
+
+
+
+.texto_footer {
+    font-size: 20px;
+    margin-right: 20px;
+    text-transform: lowercase;
+}

@@ -8,17 +8,19 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/c63b7badb9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- Nav -->
     <div class="container-fluid">
         <header>
             <nav class="navbar navbar-expand-lg bg-warning fixed-top p-3">
                 <div class="col-sm-2">
                     <a class="navbar-brand" href="./index.html">
-                        <img src="./isogam1.png" alt="Isologo gam" />
+                        <img src="./Imagenes/isogam1.png" alt="Isologo gam" />
                     </a>
                 </div>
                 <div>
@@ -35,10 +37,10 @@
                                 href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item ps-5">
-                            <a class="nav-link" href="carrito.html">Carrito</a>
+                            <a class="nav-link" onclick="abrirModal()">Carrito</a>
                         </li>
-                        <li class="nav-item ps-5">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        <li class="nav-item ps-5 me-5">
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                         <li>
                             <button class="switch" id="switch">
@@ -51,17 +53,116 @@
             </nav>
         </header>
     </div>
+    <!-- Fin nav -->
+
+    <!-- Home -->
     <section>
-    <div>
-        <img src="./fondo.png" alt="Fondo" class="fondo__imagen">
-    </div>
-</section>
-<h1 class="title">
-    <p> Juegos disponibles</p>
-</h1>
+        <div>
+            <img src="./Imagenes/fondo.png" alt="Fondo" class="fondo__imagen">
+        </div>
+    </section>
+    <!-- Fin home -->
+
+    <!-- Titulo juegos -->
+    <h1 class="title">
+        <p> Juegos disponibles</p>
+    </h1>
+    <!-- Fin titulo juegos -->
+
+    <!-- Juegos -->
     <div class="container"></div>
-    <div class="container-carrito"></div>
+    <!-- Fin juegos -->
+
+    <!-- Contacto -->
+    <section>
+        <h2 id="contacto" class="title">Contacto</h2>
+        <div class="formcontainer">
+            <form action="#" class="contacto__form">
+                <p>
+                    <label for="camponombre" class="contacto__form__etiqueta">Nombre</label>
+                    <input type="text" name="nombre" id="camponombre" placeholder="Nombre"
+                        class="contacto__form__input" />
+                </p>
+                <p>
+                    <label for="apellido" class="contacto__form__etiqueta">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido"
+                        class="contacto__form__input" />
+                </p>
+                <p>
+                    <label for="email" class="contacto__form__etiqueta">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="contacto__form__input" />
+                </p>
+                <p>
+                    <label for="teléfono" class="contacto__form__etiqueta">Teléfono</label>
+                    <input type="number" name="teléfono" id="teléfono" placeholder="Teléfono"
+                        class="contacto__form__input" />
+                </p>
+                <p>
+                    <label for="mensaje" class="contacto__form__etiqueta">Mensaje</label>
+                    <textarea id="mensaje" name="areamensaje" rows="8" cols="69"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar" class="contacto__form__input" />
+                </p>
+            </form>
+
+            <div id="gmap">
+                <iframe id="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3284692141588!2d-58.39551738440493!3d-34.59585468046159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabde1df01bd%3A0x59fc6e926c4505ee!2sAv.%20Santa%20Fe%20%26%20Av.%20Callao%2C%20C1061%20CABA!5e0!3m2!1ses!2sar!4v1630808614844!5m2!1ses!2sar"
+                    loading="lazy" width="600px" height="600px"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin contacto -->
+
+    <!-- Carrito -->
+
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-carrito"></div>
+                    <div class="total text-end">Total= $0</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin carrito -->
+
+    <!-- footer -->
+    <footer class="footer-down-nosotros">
+        <div class="iconos_footer">
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="texto_footer">/GAM</a>
+
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="texto_footer">GAM</a>
+
+            <a href="https://www.artstation.com" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            <a href="https://www.artstation.com" target="_blank" class="texto_footer">GAM</a>
+
+
+            <a href="https://www.gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.gmail.com" target="_blank" class="texto_footer">gam@gmail.com</a>
+        </div>
+    </footer>
+    <!-- Fin footer -->
+
+
+
+    <!-- js links -->
     <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
