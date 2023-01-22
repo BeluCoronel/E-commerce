@@ -1,0 +1,200 @@
+[
+    {
+        "id":0,
+        "nombre":"A way out",
+        "imagen":"./Imagenes/awayout.jpg",
+        "categoria":"Aventura",
+        "edad":18,
+        "precio":2800,
+        "oferta" : false
+    },
+    {
+        "id":1,
+        "nombre":"Assassins Creed: Valhalla",
+        "imagen":"./Imagenes/Assassins-Creed-Valhalla.jpg",
+        "categoria":"Accion",
+        "edad":18,
+        "precio":9470,
+        "oferta" : true
+    },
+    {
+        "id":2,
+        "nombre":"Among Us",
+        "imagen":"./Imagenes/among-us.jpg",
+        "categoria":"Multijugador",
+        "edad":7,
+        "precio":2600,
+        "oferta" : false
+    },
+    {
+        "id":3,
+        "nombre":"Cyberpunk",
+        "imagen":"./Imagenes/Cyberpunk.jpg",
+        "categoria":"Aventura",
+        "edad":18,
+        "precio":9900,
+        "oferta" : false
+    },
+    {
+        "id":4,
+        "nombre":"Overccoked 2",
+        "imagen":"./Imagenes/overcooked2.jpg",
+        "categoria":"Cooperativo",
+        "edad":3,
+        "precio":3200,
+        "oferta" : false
+    },
+    {
+        "id":5,
+        "nombre":"Final Fantasy XV",
+        "imagen":"./Imagenes/finalfantasyXV.jpg",
+        "categoria":"Accion",
+        "edad":18,
+        "precio":7920,
+        "oferta" : true
+    },
+    {
+        "id":6,
+        "nombre":"God of War",
+        "imagen":"./Imagenes/gow-ragnarok.jpg",
+        "categoria":"Aventura",
+        "edad":18,
+        "precio":13500,
+        "oferta" : false
+    },
+    {
+        "id":7,
+        "nombre":"Little Big Planet 3",
+        "imagen":"./Imagenes/littlebigplanet3.jpg",
+        "categoria":"Plataforma",
+        "edad":7,
+        "precio":2290,
+        "oferta" : false
+    },
+    {
+        "id":8,
+        "nombre":"Just Dance 2022",
+        "imagen":"./Imagenes/justdance2022.jpg",
+        "categoria":"Musica",
+        "edad":3,
+        "precio":5999,
+        "oferta" : false
+    },
+    {
+        "id":9,
+        "nombre":"Anthem",
+        "imagen":"./Imagenes/anthem.jpg",
+        "categoria":"Accion",
+        "edad":16,
+        "precio":4500,
+        "oferta" : true
+    },
+    {
+        "id":10,
+        "nombre":"Detroit: Become human",
+        "imagen":"./Imagenes/detroitbecomehuman.jpg",
+        "categoria":"Aventura",
+        "edad":18,
+        "precio":8700,
+        "oferta" : false
+    },
+    {
+        "id":11,
+        "nombre":"Digimon world: Next order",
+        "imagen":"./Imagenes/digimonworld.jpg",
+        "categoria":"Accion",
+        "edad":12,
+        "precio":3900,
+        "oferta" : true
+    },
+    {
+        "id":12,
+        "nombre":"Elden ring",
+        "imagen":"./Imagenes/eldenring.jpg",
+        "categoria":"Accion",
+        "edad":16,
+        "precio":6500,
+        "oferta" : true
+    },
+    {
+        "id":13,
+        "nombre":"Fall Guys",
+        "imagen":"./Imagenes/fallguys.jpg",
+        "categoria":"Multijugador",
+        "edad":3,
+        "precio":7600,
+        "oferta" : false
+    },
+    {
+        "id":14,
+        "nombre":"Gang beast",
+        "imagen":"./Imagenes/gangbeast.jpg",
+        "categoria":"Multijugador",
+        "edad":7,
+        "precio":3600,
+        "oferta" : false
+    },
+    {
+        "id":15,
+        "nombre":"Hitman 3",
+        "imagen":"./Imagenes/hitman3.jpg",
+        "categoria":"Espionaje",
+        "edad":18,
+        "precio":14500,
+        "oferta" : false
+    },
+    {
+        "id":16,
+        "nombre":"It takes two",
+        "imagen":"./Imagenes/ittakestwo.jpg",
+        "categoria":"Aventura",
+        "edad":12,
+        "precio":15400,
+        "oferta" : false
+    },
+    {
+        "id":17,
+        "nombre":"Mortal kombat 11",
+        "imagen":"./Imagenes/mortalkombat11.jpg",
+        "categoria":"Lucha",
+        "edad":18,
+        "precio":10890,
+        "oferta" : false
+    },
+    {
+        "id":18,
+        "nombre":"NBA 2K23",
+        "imagen":"./Imagenes/nba2023.jpg",
+        "categoria":"Deporte",
+        "edad":3,
+        "precio":12460,
+        "oferta" : false
+    },
+    {
+        "id":19,
+        "nombre":"Need for speed",
+        "imagen":"./Imagenes/needforspeed.jpg",
+        "categoria":"Carreras",
+        "edad":12,
+        "precio":8000,
+        "oferta" : false
+    },
+    {
+        "id":20,
+        "nombre":"Need for speed heat",
+        "imagen":"./Imagenes/needforspeedheat.jpg",
+        "categoria":"Carreras",
+        "edad":12,
+        "precio":13200,
+        "oferta" : false
+    },
+    {
+        "id":21,
+        "nombre":"Sims 4",
+        "imagen":"./Imagenes/sims4.jpg",
+        "categoria":"Simulacion",
+        "edad":12,
+        "precio":8300,
+        "oferta" : false
+    }
+]

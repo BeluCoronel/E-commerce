@@ -5,10 +5,21 @@ body.oscuro {
     background-color: #171717;
     color: white; }
 
+.carousel {
+  z-index: 0; }
+
+.navbarspace {
+  height: 50px; }
+
 .container-fluid {
   position: sticky;
   top: 0;
   z-index: 1; }
+
+.navbar {
+  background-color: orange; }
+  body.oscuro .navbar {
+    background-color: #030353; }
 
 .ul {
   justify-content: space-evenly; }
@@ -88,10 +99,38 @@ body.oscuro {
   font-size: 50px;
   padding: 15px;
   margin-bottom: 50px; }
+  body.oscuro .title {
+    background-color: #000015; }
 
-.container {
+.boton {
+  background-color: lightblue;
+  border: 2px solid #83bfd3;
+  border-radius: 5px;
+  margin-top: 10px; }
+
+.eliminarProducto {
+  background-color: lightblue;
+  border: 2px solid #83bfd3;
+  border-radius: 50%; }
+
+.dropdown_ordenar, .dropdown_filtrar {
+  width: 30%;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.dropdown_ordenar {
+  margin-left: 15%; }
+
+.dropdown_filtrar {
+  margin-left: 2%; }
+
+.container, .container_juegosgratis {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin: auto; }
 
 .container__card {
   padding: 10px;
@@ -117,6 +156,10 @@ body.oscuro {
 .total {
   font-size: 30px; }
 
+.oferta {
+  color: white;
+  background-color: green; }
+
 form {
   margin-left: 40px; }
 
@@ -126,6 +169,9 @@ input {
   border: 3px solid orange;
   border-radius: 4px;
   resize: vertical; }
+  body.oscuro input {
+    border: 3px solid #000015;
+    color: white; }
 
 label {
   padding: 12px 12px 12px 0;
@@ -155,6 +201,8 @@ input[type=submit] {
   cursor: pointer;
   margin-bottom: 20px;
   border-radius: 15px; }
+  body.oscuro input[type=submit] {
+    background-color: #000015; }
 
 #gmap {
   width: 800px;
@@ -180,6 +228,8 @@ footer {
   footer a {
     text-decoration: none;
     color: white; }
+  body.oscuro footer {
+    background-color: #000015; }
 
 .footer-element {
   width: 0%; }
@@ -202,3 +252,10 @@ footer {
   font-size: 20px;
   margin-right: 20px;
   text-transform: lowercase; }
+
+.eliminarProducto {
+  width: 40px;
+  height: 40px; }
+
+.boton_vaciar {
+  margin-right: 150px; }

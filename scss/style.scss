@@ -10,12 +10,27 @@ body.oscuro {
 
 
 // Nav
+.carousel{
+z-index: 0;
+
+}
+.navbarspace{
+    height: 50px;
+}
+
 .container-fluid {
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
+.navbar {
+    background-color: orange;
+
+    body.oscuro & {
+        background-color: rgb(3, 3, 83);
+    }
+}
 .ul {
     justify-content: space-evenly;
 }
@@ -62,8 +77,6 @@ body.oscuro {
 .navbar-brand {
     padding: 10px;
 }
-
-
 
 
 // Boton modo oscuro
@@ -123,13 +136,52 @@ body.oscuro {
     font-size: 50px;
     padding: 15px;
     margin-bottom: 50px;
+
+    body.oscuro & {
+        background-color: rgb(0,0,21);
+    }
 }
 
 
-// Contenedos cards
-.container {
+.boton{
+    background-color: lightblue;
+    border: 2px solid rgb(131, 191, 211);
+    border-radius:5px;
+    margin-top: 10px;
+}
+
+.eliminarProducto{
+    background-color: lightblue;
+    border: 2px solid rgb(131, 191, 211);
+    border-radius:50%;
+    
+}
+
+
+// Dropdowns
+
+.dropdown_ordenar , .dropdown_filtrar{
+    width: 30%;
+    height:45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.dropdown_ordenar{
+    margin-left: 15%;
+}
+
+.dropdown_filtrar{
+    margin-left:2%;
+}
+
+// Contenedor cards
+.container , .container_juegosgratis {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 
@@ -164,6 +216,11 @@ body.oscuro {
     font-size:30px;
 }
 
+.oferta{
+    color : white;
+    background-color: green;
+}
+
 // Contacto
 
 form {
@@ -176,6 +233,11 @@ input {
     border: 3px solid orange;
     border-radius: 4px;
     resize: vertical;
+
+    body.oscuro & {
+        border: 3px solid rgb(0,0,21);
+        color: white;
+    }
 }
 
 label {
@@ -215,6 +277,11 @@ input[type=submit] {
     cursor: pointer;
     margin-bottom: 20px;
     border-radius: 15px;
+
+    body.oscuro & {
+        background-color: rgb(0,0,21);
+        
+    }
 }
 
 
@@ -239,11 +306,6 @@ iframe {
 
 
 
-
-
-
-
-
 // Footer
 
 footer {
@@ -253,12 +315,17 @@ footer {
     margin: 0;
     bottom: 0;
     text-align: center;
-
+    
 
     & a {
         text-decoration: none;
         color: white;
     }
+
+    body.oscuro &{
+        background-color: rgb(0, 0, 21);
+    }
+
 }
 
 .footer-element {
@@ -295,4 +362,15 @@ footer {
     font-size: 20px;
     margin-right: 20px;
     text-transform: lowercase;
+}
+
+
+
+.eliminarProducto{
+    width: 40px;
+    height:40px;
+}
+
+.boton_vaciar{
+    margin-right: 150px;
 }
