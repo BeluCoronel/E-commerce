@@ -57,94 +57,99 @@
     </div>
     <!-- Fin nav -->
     <section class="section_body">
-    <div class="navbarspace"></div>
-    <!-- Home -->
-    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="navbarspace"></div>
+        <!-- Home -->
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="./Imagenes/fondo.png" class="d-block w-100" alt="Los mejores juegos">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="./Imagenes/fondo2.png" class="d-block w-100" alt="No te quedes sin el tuyo">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="./Imagenes/fondo3.png" class="d-block w-100" alt="Stickers de regalo">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="2000">
-            <img src="./Imagenes/fondo.png" class="d-block w-100" alt="Los mejores juegos">
+        <!-- Fin home -->
+
+        <!-- Titulo juegos -->
+        <h1 class="title">
+            <p> Juegos disponibles</p>
+        </h1>
+        <!-- Fin titulo juegos -->
+
+
+        <!-- DropdownMenu -->
+        <div class="dropdown_ordenar">
+            <select class="form-select select-ordenar-por" aria-label="Default select example">
+                <option selected>Ordenar por...</option>
+                <option value="alfabetico_asc">Alfabetico Asc.</option>
+                <option value="alfabetico_desc">Alfabetico Desc.</option>
+                <option value="mayor_precio">Mayor Precio</option>
+                <option value="menor_precio">Menor Precio</option>
+            </select>
         </div>
-        <div class="carousel-item" data-interval="2000">
-            <img src="./Imagenes/fondo2.png" class="d-block w-100" alt="No te quedes sin el tuyo">
+        <!-- Fin DropdownMenu -->
+
+
+        <!-- FiltroSelector -->
+        <div class="dropdown_filtrar">
+            <select class="form-select  select-filtrar-por">
+                <option value="" selected>Filtrar por...</option>
+                <option value="Ofertas">Juegos en Oferta</option>
+                <option value="Accion">Acción</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Carreras">Carreras</option>
+                <option value="Cooperativo">Cooperativo</option>
+                <option value="Espionaje">Espionaje</option>
+                <option value="Lucha">Lucha</option>
+                <option value="Multijugador">Multijugador</option>
+                <option value="Musica">Música</option>
+                <option value="Plataforma">Plataforma</option>
+                <option value="Simulacion">Simulación</option>
+            </select>
         </div>
-        <div class="carousel-item" data-interval="2000">
-            <img src="./Imagenes/fondo3.png" class="d-block w-100" alt="Stickers de regalo">
+
+        <!-- FinFiltroSelector -->
+
+
+
+        <!-- Juegos -->
+        <div class="container"></div>
+        <!-- Fin juegos -->
+
+        <!-- Juegos gratis -->
+        <h1 id="juegosgratis" class="title">Juegos gratis del día</h1>
+        <div class="container">
+            <div class="container_juegosgratis"></div>
         </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- Fin home -->
-
-    <!-- Titulo juegos -->
-    <h1 class="title">
-        <p> Juegos disponibles</p>
-    </h1>
-    <!-- Fin titulo juegos -->
-
-
-    <!-- DropdownMenu -->
-    <div class="dropdown_ordenar">
-    <select class="form-select select-ordenar-por" aria-label="Default select example">
-        <option selected>Ordenar por...</option>
-        <option value="alfabetico_asc">Alfabetico Asc.</option>
-        <option value="alfabetico_desc">Alfabetico Desc.</option>
-        <option value="mayor_precio">Mayor Precio</option>
-        <option value="menor_precio">Menor Precio</option>
-    </select>
-    </div>
-    <!-- Fin DropdownMenu -->
-
-
-    <!-- FiltroSelector -->
-    <div class="dropdown_filtrar">
-    <select class="form-select  select-filtrar-por">
-        <option value="" selected>Filtrar por...</option>
-        <option value="Ofertas">Juegos en Oferta</option>
-        <option value="Accion">Acción</option>
-        <option value="Aventura">Aventura</option>
-        <option value="Carreras">Carreras</option>
-        <option value="Cooperativo">Cooperativo</option>
-        <option value="Espionaje">Espionaje</option>
-        <option value="Lucha">Lucha</option>
-        <option value="Multijugador">Multijugador</option>
-        <option value="Musica">Música</option>
-        <option value="Plataforma">Plataforma</option>
-        <option value="Simulacion">Simulación</option>
-    </select>
-</div>
-
-<!-- FinFiltroSelector -->
-
-
-
-    <!-- Juegos -->
-    <div class="container"></div>
-    <!-- Fin juegos -->
-
-    <!-- Juegos gratis -->
-    <h1 id="juegosgratis" class="title">Juegos gratis del día</h1>
-    <div class="container">
-    <div class="container_juegosgratis"></div></div>
-    <!-- Fin juegos gratis -->
+        <!-- Fin juegos gratis -->
     </section>
     <!-- Contacto -->
     <section class="section_contacto" style="display: none;">
         <h2 id="contacto" class="title">Contacto</h2>
         <div class="formcontainer">
-            <form  class="contacto__form" action="https://formspree.io/f/moqzvnjl"
-            method="POST">
+            <form class="contacto__form" action="https://formspree.io/f/moqzvnjl" method="POST">
                 <p>
                     <label for="camponombre" class="contacto__form__etiqueta">Nombre</label>
                     <input type="text" name="nombre" id="camponombre" placeholder="Nombre"
@@ -198,7 +203,8 @@
                     <div class="total text-end">Total= $0</div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="boton_vaciar btn btn-primary justify-content-start">Vaciar carrito</button>
+                    <button type="button" class="boton_vaciar btn btn-primary justify-content-start">Vaciar
+                        carrito</button>
                     <button type="button" class="boton_comprar btn btn-primary">Comprar</button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -234,7 +240,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
 </body>
 
 </html>

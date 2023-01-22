@@ -2,7 +2,8 @@
 body.oscuro {
     background-color: rgb(23, 23, 23);
     color: white;
-    & .modal-content{
+
+    & .modal-content {
         background-color: rgb(23, 23, 23);
         color: white;
     }
@@ -10,11 +11,12 @@ body.oscuro {
 
 
 // Nav
-.carousel{
-z-index: 0;
+.carousel {
+    z-index: 0;
 
 }
-.navbarspace{
+
+.navbarspace {
     height: 50px;
 }
 
@@ -31,6 +33,7 @@ z-index: 0;
         background-color: rgb(3, 3, 83);
     }
 }
+
 .ul {
     justify-content: space-evenly;
 }
@@ -138,47 +141,49 @@ z-index: 0;
     margin-bottom: 50px;
 
     body.oscuro & {
-        background-color: rgb(0,0,21);
+        background-color: rgb(0, 0, 21);
     }
 }
 
 
-.boton{
+.boton {
     background-color: lightblue;
     border: 2px solid rgb(131, 191, 211);
-    border-radius:5px;
+    border-radius: 5px;
     margin-top: 10px;
 }
 
-.eliminarProducto{
+.eliminarProducto {
     background-color: lightblue;
     border: 2px solid rgb(131, 191, 211);
-    border-radius:50%;
-    
+    border-radius: 50%;
+
 }
 
 
 // Dropdowns
 
-.dropdown_ordenar , .dropdown_filtrar{
+.dropdown_ordenar,
+.dropdown_filtrar {
     width: 30%;
-    height:45px;
+    height: 45px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.dropdown_ordenar{
+.dropdown_ordenar {
     margin-left: 15%;
 }
 
-.dropdown_filtrar{
-    margin-left:2%;
+.dropdown_filtrar {
+    margin-left: 2%;
 }
 
 // Contenedor cards
-.container , .container_juegosgratis {
+.container,
+.container_juegosgratis {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -202,22 +207,22 @@ z-index: 0;
 
 }
 
-.container__card__imagen__carrito{
+.container__card__imagen__carrito {
     width: 100px;
     height: 30px;
 }
 
-.imagen__carrito{
+.imagen__carrito {
     width: 100%;
     height: auto;
 }
 
-.total{
-    font-size:30px;
+.total {
+    font-size: 30px;
 }
 
-.oferta{
-    color : white;
+.oferta {
+    color: white;
     background-color: green;
 }
 
@@ -235,7 +240,7 @@ input {
     resize: vertical;
 
     body.oscuro & {
-        border: 3px solid rgb(0,0,21);
+        border: 3px solid rgb(0, 0, 21);
         color: white;
     }
 }
@@ -279,8 +284,8 @@ input[type=submit] {
     border-radius: 15px;
 
     body.oscuro & {
-        background-color: rgb(0,0,21);
-        
+        background-color: rgb(0, 0, 21);
+
     }
 }
 
@@ -315,14 +320,14 @@ footer {
     margin: 0;
     bottom: 0;
     text-align: center;
-    
+
 
     & a {
         text-decoration: none;
         color: white;
     }
 
-    body.oscuro &{
+    body.oscuro & {
         background-color: rgb(0, 0, 21);
     }
 
@@ -366,11 +371,11 @@ footer {
 
 
 
-.eliminarProducto{
+.eliminarProducto {
     width: 40px;
-    height:40px;
+    height: 40px;
 }
 
-.boton_vaciar{
+.boton_vaciar {
     margin-right: 150px;
 }

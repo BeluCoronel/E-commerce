@@ -8,9 +8,9 @@ class productos {
         this.precio = precio;
         this.oferta = oferta;
     }
-    
+
     obtenerOferta(porcentaje) {
-        return this.precio * porcentaje; 
+        return this.precio * porcentaje;
     }
 }
 
@@ -18,11 +18,11 @@ let arrayProductos = [];
 let arrayProductosOriginal = [];
 const Descuentos = 0.8;
 
-function ObtenerProductosDesdeJSON(){
+function ObtenerProductosDesdeJSON() {
     fetch('productos.json')
-	.then(response => response.json())
-    .then(response => {CrearProductos(response)})
-	.catch(err => console.error(err));
+        .then(response => response.json())
+        .then(response => { CrearProductos(response) })
+        .catch(err => console.error(err));
 
 }
 
@@ -32,12 +32,12 @@ function CrearProductos(arrayDeProductosJson) {
     arrayDeProductosJson.forEach(producto => {
         arrayProductos.push(
             new productos(
-                producto.id, 
-                producto.nombre, 
-                producto.imagen, 
-                producto.categoria, 
-                producto.edad, 
-                producto.precio, 
+                producto.id,
+                producto.nombre,
+                producto.imagen,
+                producto.categoria,
+                producto.edad,
+                producto.precio,
                 producto.oferta
             ));
     })
@@ -64,7 +64,7 @@ function cargarProductos() {
         </div>
         <h2> ${arrayProductos[i].nombre}</h2>
         <h3> $${arrayProductos[i].precio}</h3>
-        <h4 class ="oferta">${arrayProductos[i].oferta? "Oferta: $" + arrayProductos[i].obtenerOferta(Descuentos) : ""}</h4>
+        <h4 class ="oferta">${arrayProductos[i].oferta ? "Oferta: $" + arrayProductos[i].obtenerOferta(Descuentos) : ""}</h4>
         <button onclick="agregarAlCarrito(${arrayProductos[i].id})" class= "boton"> Agregar al carrito </button>
         `
         productosNuevos.appendChild(card)
@@ -101,7 +101,7 @@ function actualizarProductosEnElCarrito() {
     let carritoLSParse = JSON.parse(carritoLS)
     let total = 0
     for (let i = 0; i < carritoLSParse.length; i++) {
-        let precio =  carritoLSParse[i].oferta? carritoLSParse[i].precio * Descuentos :carritoLSParse[i].precio
+        let precio = carritoLSParse[i].oferta ? carritoLSParse[i].precio * Descuentos : carritoLSParse[i].precio
         total += precio
         const card = document.createElement("div")
         card.className = "container__card"
@@ -204,7 +204,7 @@ const select = document.querySelector(".select-ordenar-por");
 
 select.addEventListener(`change`, () => {
 
-ordenarProductos()
+    ordenarProductos()
 
 });
 
@@ -298,7 +298,7 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         if (response.ok) {
-            swal("Gracias por contactarnos", {icon:"success"});
+            swal("Gracias por contactarnos", { icon: "success" });
 
             form.reset()
         } else {
@@ -324,49 +324,49 @@ const juegosGratis = document.querySelectorAll(".juegos-gratis");
 
 
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '2832426796msh114d5a1e9beec69p1cd661jsn1a19be4f9008',
-		'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
-	}
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '2832426796msh114d5a1e9beec69p1cd661jsn1a19be4f9008',
+        'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+    }
 };
 let juegos = []
 
 fetch('https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc', options)
-	.then(response => response.json())
-	.then(response => {juegos = response; cargarJuegosGratis()})
-	.catch(err => console.error(err));
+    .then(response => response.json())
+    .then(response => { juegos = response; cargarJuegosGratis() })
+    .catch(err => console.error(err));
 
 
-    function cargarJuegosGratis() {
-        const juegosGratis = document.querySelector(".container_juegosgratis")
-    
-        juegosGratis.innerHTML = "";
-    
-        for (let i = 0; i < 3; i++) {
-            
-            let num = Math.floor(Math.random() * (juegos.length));
+function cargarJuegosGratis() {
+    const juegosGratis = document.querySelector(".container_juegosgratis")
 
-            const card = document.createElement("div")
-            card.className = "container__card"
-            card.innerHTML = ` 
+    juegosGratis.innerHTML = "";
+
+    for (let i = 0; i < 3; i++) {
+
+        let num = Math.floor(Math.random() * (juegos.length));
+
+        const card = document.createElement("div")
+        card.className = "container__card"
+        card.innerHTML = ` 
             <div class = "container__card__imagen">
             <img src= ${juegos[num].thumbnail} alt="${juegos[num].title}" 
             </div>
             <h2> ${juegos[num].title}</h2>
             <a href="${juegos[num].game_url}" class="button" target="_blank"><Button class="boton">Ir al juego</Button>  </a>
             `
-            juegosGratis.appendChild(card)
-        }
+        juegosGratis.appendChild(card)
     }
+}
 
-    function mostrarContacto(esContacto){
-        if (esContacto) {
-            $(".section_body").hide();
-            $(".section_contacto").show();
-        } else {
-            $(".section_body").show();
-            $(".section_contacto").hide();
-        }
+function mostrarContacto(esContacto) {
+    if (esContacto) {
+        $(".section_body").hide();
+        $(".section_contacto").show();
+    } else {
+        $(".section_body").show();
+        $(".section_contacto").hide();
     }
+}
 
